@@ -26,6 +26,6 @@ function GRC(Password-length)
   return Math.pow(number-of-characters, Password-length - 1) + GRC(Password-length - 1); 
 }
 ```
-and a symbol character set size of 32.
+and a symbol character set size of 33.
 
 included is version 1 of the calculator, please write me if you'd like to clean up the code and make it better. I want this to be fully community built. 
