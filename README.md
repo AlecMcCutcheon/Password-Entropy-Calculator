@@ -7,7 +7,9 @@ You can toggle between the normal algorithm and GRC's algorithm and create custo
 
 * The normal algorithm is:  
 ```javascript
- Math.pow(number-of-characters, Password-length);
+Var characters = 10;
+Var length = 5;
+ Math.pow(characters, length);
 ```
 and a symbol character set size of 32.
 
