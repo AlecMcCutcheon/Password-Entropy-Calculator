@@ -14,17 +14,22 @@ and a symbol character set size of 32.
 * GRC's algorithm is:
 
 ```javascript
-function GRC(Password-length) 
+
+Var characters = 10;
+Var length = 5;
+Var lengthstatic = 5;
+
+function GRC(length) 
 { 
-  if(Password-length < 1) 
+  if(length < 1) 
   {
     return 0 ; 
   }
-  if (Password-length == 1)
+  if (length == 1)
   {
-    return Math.pow(number-of-characters, Password-length); 
+    return Math.pow(characters, lengthstatic); 
   }
-  return Math.pow(number-of-characters, Password-length - 1) + GRC(Password-length - 1); 
+  return Math.pow(characters, length - 1) + GRC(length - 1); 
 }
 ```
 and a symbol character set size of 33.
