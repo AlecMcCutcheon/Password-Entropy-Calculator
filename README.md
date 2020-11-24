@@ -16,13 +16,13 @@ and a symbol character set size of 32.
 
 * GRC's algorithm is:
 
-The characters, length, and staticcurrentlength are all dynamic variables pulled from the current password. length and staticcurrentlength are pulled from the same place but only length is manipulated by the function and staticcurrentlength preserves the current input length so it can be used in the calculation.
+The characters, length, and currentlength are all dynamic variables pulled from the current password. length and currentlength are pulled from the same place but only length is manipulated by the function and currentlength preserves the current input length so it can be used in the calculation.
 
 ```javascript
 
 Var characters = 10;
 Var length = 5;
-Var staticcurrentlength = 5;
+Var currentlength = 5;
 
 function GRC(length) 
 { 
@@ -32,7 +32,7 @@ function GRC(length)
   }
   if (length == 1)
   {
-    return Math.pow(characters, staticcurrentlength); 
+    return Math.pow(characters, currentlength); 
   }
   return Math.pow(characters, length - 1) + GRC(length - 1); 
 }
