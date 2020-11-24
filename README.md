@@ -15,7 +15,7 @@ Var length = 5;
 
  Math.pow(charset, length);
 ```
-and a symbol character set size of 32.
+and a symbol character set size of 32. Which = 100,000
 
 * GRC's algorithm is:
 
@@ -40,4 +40,4 @@ function GRC(length)
   return Math.pow(charset, length - 1) + GRC(length - 1); 
 }
 ```
-and a symbol character set size of 33.
+and a symbol character set size of 33. Which = 111,110
