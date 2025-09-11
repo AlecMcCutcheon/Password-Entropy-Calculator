@@ -1,4 +1,4 @@
-# Password Entropy & strength Calculator 
+# Password Entropy & strength Calculator
 
 Built off of <a href="https://github.com/tests-always-included/password-strength">tests-always-included/password-strength</a>. Included is version 1 of the calculator, please write me if you'd like to clean up the code and make it better. I want this to be fully community built. 
 
